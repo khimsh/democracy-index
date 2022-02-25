@@ -11,110 +11,129 @@
   <body>
     <header class="header">
       <div class="container">
-        <h1 class="logo">
-          <a href="/" aria-label="დაბრუნდი მთავარ გვერდზე">
-            <img
-              src="assets/images/di-ge.png"
-              alt="დემოკრატიის ინდექსი საქართველო"
-            />
-          </a>
-        </h1>
+        <div class="header__content">
+          <h1 class="header__logo">
+            <a href="/" aria-label="დაბრუნდი მთავარ გვერდზე">
+              <img
+                src="assets/images/di-ge.png"
+                alt="დემოკრატიის ინდექსი საქართველო"
+              />
+            </a>
+          </h1>
 
-        <nav>
-          <ul>
-            <li>
-              <span>ვინ ვართ ჩვენ</span>
-
-              <ul>
-                <li>
-                  <a href="/mission.html">მისია</a>
-                </li>
-                <li>
-                  <a href="/team.html">გუნდი</a>
-                </li>
-                <li>
-                  <a href="/vacancy.html">ვაკანსია</a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <span>რას ვაკეთებთ</span>
+          <div class="header__right">
+            <nav class="nav">
+              <button aria-label="close nav" class="close-nav">
+                <i class="fa-solid fa-xmark fa-xl"></i>
+              </button>
 
               <ul>
-                <li>
-                  <a href="/parliament.html">პარლამენტი</a>
+                <li class="dropdown">
+                  <span>ვინ ვართ ჩვენ</span>
+
+                  <ul class="dropdown__content">
+                    <li>
+                      <a href="mission.html">მისია</a>
+                    </li>
+                    <li>
+                      <a href="team.html">გუნდი</a>
+                    </li>
+                    <li>
+                      <a href="vacancy.html">ვაკანსია</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="#">მთავრობა</a>
+
+                <li class="dropdown">
+                  <span>რას ვაკეთებთ</span>
+
+                  <ul class="dropdown__content">
+                    <li>
+                      <a href="parliament.html">პარლამენტი</a>
+                    </li>
+                    <li>
+                      <a href="#">მთავრობა</a>
+                    </li>
+                    <li>
+                      <a href="#">სასამართლო</a>
+                    </li>
+                  </ul>
                 </li>
+
+                <li class="dropdown">
+                  <span>ადვოკატირება</span>
+
+                  <ul class="dropdown__content">
+                    <li>
+                      <a href="news.html">სიახლეები</a>
+                    </li>
+                    <li>
+                      <a href="proposals.html">წინადადებები</a>
+                    </li>
+                    <li>
+                      <a href="studies.html">კვლევები</a>
+                    </li>
+                    <li>
+                      <a href="blogs.html">ბლოგები</a>
+                    </li>
+                    <li>
+                      <a href="#">ვიდეოები</a>
+                    </li>
+                  </ul>
+                </li>
+
                 <li>
-                  <a href="#">სასამართლო</a>
+                  <a href="party.html">დეპუტატის პროფილები</a>
+                </li>
+
+                <li>
+                  <a href="contact.html">კონტაქტი</a>
                 </li>
               </ul>
-            </li>
+            </nav>
 
-            <li>
-              <span>ადვოკატირება</span>
+            <div class="header__actions">
+              <div class="header__search">
+                <button type="button">
+                  <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </button>
 
-              <ul>
-                <li>
-                  <a href="/news.html">სიახლეები</a>
-                </li>
-                <li>
-                  <a href="#">წინადადებები</a>
-                </li>
-                <li>
-                  <a href="#">კვლევები</a>
-                </li>
-                <li>
-                  <a href="#">ბლოგები</a>
-                </li>
-                <li>
-                  <a href="#">ვიდეოები</a>
-                </li>
-              </ul>
-            </li>
+                <div class="header__search__box">
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="ძიება"
+                  />
+                </div>
+              </div>
 
-            <li>
-              <span>დეპუტატის პროფილები</span>
-            </li>
+              <div class="header__lang">
+                <button>
+                  <span>GE</span>
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
 
-            <li>
-              <a href="/contact.html" class="active">კონტაქტი</a>
-            </li>
-          </ul>
-        </nav>
+                <ul class="header__lang__options">
+                  <li>
+                    <a href="#">EN</a>
+                  </li>
+                  <li>
+                    <a href="#">RU</a>
+                  </li>
+                </ul>
+              </div>
 
-        <div class="header__search">
-          <button>
-            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-          </button>
-
-          <div class="header__search__box">
-            <input
-              type="search"
-              name="search"
-              id="search"
-              placeholder="ძიება"
-            />
+              <button
+                type="button"
+                aria-label="open navigation"
+                class="open-nav"
+              >
+                <i class="fa-solid fa-bars fa-xl"></i>
+              </button>
+            </div>
           </div>
         </div>
-
-        <ul>
-          <li>
-            <span>GE</span>
-
-            <ul>
-              <li>
-                <a href="#">EN</a>
-              </li>
-              <li>
-                <a href="#">RU</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </div>
     </header>
 

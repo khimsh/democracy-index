@@ -201,10 +201,16 @@ html:focus-within {
 .header__logo {
   display: flex;
   align-items: center;
+  padding-block: 14px;
 }
 .header__logo img {
   height: 50px;
   width: auto;
+}
+@media only screen and (min-width: 1200px) {
+  .header__logo img {
+    height: 86px;
+  }
 }
 .header__actions {
   height: 100%;
@@ -232,10 +238,14 @@ html:focus-within {
   position: relative;
   height: 100%;
 }
+.header__search:hover .header__search__box, .header__search:focus .header__search__box {
+  opacity: 1;
+  transform: scaleY(1);
+}
 .header__search__box {
   position: absolute;
   right: 0;
-  bottom: -55%;
+  top: 78%;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
@@ -257,7 +267,20 @@ html:focus-within {
   outline-color: hsl(var(--clr-theme));
 }
 .header__lang {
+  position: relative;
   height: 100%;
+}
+.header__lang:hover .header__lang__options, .header__lang:focus .header__lang__options {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.header__lang.active .header__lang__options {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.header__lang.active button {
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-theme));
 }
 .header__lang button {
   height: 100%;
@@ -269,17 +292,33 @@ html:focus-within {
   transform: translateY(-2px);
 }
 .header__lang__options {
-  list-style-type: none;
+  position: absolute;
+  top: 78%;
   margin: 0;
   padding: 0;
+  width: 75px;
+  list-style-type: none;
+  background-color: hsl(var(--clr-white));
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
   transition: all 150ms ease-in-out;
 }
-.header__lang__options.active {
-  opacity: 1;
-  transform: scaleY(1);
+.header__lang__options a {
+  display: block;
+  padding-inline: 1em;
+  padding-block: 13px;
+  font-family: var(--ff-caps);
+  font-size: 1rem;
+  color: #707070;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+.header__lang__options a:hover, .header__lang__options a:focus {
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-theme));
 }
 
 .footer {
