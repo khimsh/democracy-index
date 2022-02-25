@@ -1,0 +1,32 @@
+.pagination {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+
+  a {
+    display: block;
+    font-family: var(--ff-caps);
+    font-size: 18px;
+    color: hsl(var(--clr-black));
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+
+    &.active {
+      color: hsl(var(--clr-theme));
+    }
+
+    &:hover,
+    &:active {
+      color: hsl(var(--clr-theme));
+    }
+  }
+
+  i {
+    font-size: 22px;
+    color: hsl(var(--clr-theme));
+    transform: translateY(2px);
+  }
+}

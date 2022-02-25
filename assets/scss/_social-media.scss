@@ -1,0 +1,31 @@
+.social-media {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+
+  a {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+    border: 2px solid hsl(var(--clr-black));
+    text-decoration: none;
+
+    transition: all 150ms ease-in-out;
+
+    &:hover,
+    &:active {
+      border-color: hsl(var(--clr-theme));
+
+      i {
+        color: hsl(var(--clr-theme));
+      }
+    }
+
+    i {
+      color: hsl(var(--clr-black));
+      transition: all 150ms ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+/* ტიპოგრაფია */
+/* განლაგება */
+.text-justify {
+  text-align: justify;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ფერი */
+.text-white {
+  color: hsl(var(--clr-white));
+}
+
+.text-black {
+  color: hsl(var(--clr-black));
+}
+
+.text-gray {
+  color: hsl(var(--clr-gray));
+}
+
+.text-accent {
+  color: hsl(var(--clr-theme));
+}
+
+/* დაშორებები */
+.mt-2 {
+  margin-top: 27px !important;
+}

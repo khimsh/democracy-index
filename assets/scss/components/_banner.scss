@@ -1,0 +1,34 @@
+.banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--home {
+    height: 240px;
+    display: grid;
+    place-content: center;
+
+    @media only screen and (min-width: 992px) {
+      height: 420px;
+    }
+
+    @media only screen and (min-width: 1480px) {
+      height: 600px;
+    }
+
+    button {
+      display: grid;
+      place-content: center;
+      width: 150px;
+      height: 150px;
+      background-color: hsl(var(--clr-theme));
+      border: none;
+      border-radius: 100%;
+
+      i {
+        color: hsl(var(--clr-white));
+        transform: translateX(5px);
+      }
+    }
+  }
+}

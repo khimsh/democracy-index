@@ -1,0 +1,27 @@
+/* Fonts */
+@font-face {
+  font-family: 'BPG Mrgvlovani 2010';
+  src: url('../fonts/BPGMrgvlovani2010.woff2') format('woff2'),
+    url('../fonts/BPGMrgvlovani2010.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BPG Mrgvlovani Caps 2010';
+  src: url('../fonts/BPGMrgvlovaniCaps2010.woff2') format('woff2'),
+    url('../fonts/BPGMrgvlovaniCaps2010.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BPG ExtraSquare Mtavruli';
+  src: url('../fonts/BPGExtraSquareMtavruli.woff2') format('woff2'),
+    url('../fonts/BPGExtraSquareMtavruli.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

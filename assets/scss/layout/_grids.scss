@@ -1,0 +1,7 @@
+.home-cards {
+  padding-block: 50px 70px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(397px, 1fr));
+  gap: 30px;
+}

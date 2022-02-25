@@ -1,0 +1,139 @@
+.home-card {
+  padding: 60px 50px 80px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-family: var(--ff-caps);
+    font-size: 30px;
+    font-weight: 400;
+    color: hsl(var(--clr-black));
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #707070;
+  }
+}
+
+.article-card {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+
+  figure {
+    height: 424px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__date {
+    margin-bottom: 25px;
+    font-family: var(--ff-caps);
+    font-size: 20px;
+    color: #aaaaaa;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 13px;
+    font-family: var(--ff-caps);
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(var(--clr-black));
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: hsl(var(--clr-black));
+  }
+
+  &__btn {
+    margin-top: 50px;
+    width: 222px;
+    height: 60px;
+    display: grid;
+    place-content: center;
+    font-family: var(--ff-caps);
+    font-size: 18px;
+    color: hsl(var(--clr-white));
+    text-decoration: none;
+    background-color: hsl(var(--clr-theme));
+    border-radius: 10px;
+  }
+}
+
+.alternating {
+  .blog-card:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
+
+.blog-card {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #e3e3e3;
+
+  & > * {
+    flex-basis: 50%;
+  }
+
+  figure {
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: var(--ff-caps);
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(var(--clr-black));
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #6e6e6e;
+  }
+
+  &__btn {
+    margin-top: auto;
+    width: 200px;
+    height: 60px;
+    display: grid;
+    place-content: center;
+    font-family: var(--ff-caps);
+    font-size: 18px;
+    color: hsl(var(--clr-white));
+    text-decoration: none;
+    background-color: hsl(var(--clr-theme));
+    border-radius: 15px;
+  }
+}
