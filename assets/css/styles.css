@@ -195,6 +195,9 @@ html:focus-within {
   display: flex;
   justify-content: space-between;
 }
+.header__right {
+  display: flex;
+}
 .header__logo {
   display: flex;
   align-items: center;
@@ -464,14 +467,40 @@ html:focus-within {
   transform-origin: right;
   transition: all 150ms ease-in-out;
 }
+@media only screen and (min-width: 1200px) {
+  .nav {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    min-height: unset;
+    padding-block: unset;
+    background-color: unset;
+    box-shadow: unset;
+    transform: unset;
+    overflow-y: unset;
+    opacity: 1;
+    height: 100%;
+  }
+}
 .nav.active {
   opacity: 1;
   transform: scaleX(1);
+  z-index: 10;
+}
+.nav > ul {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 1200px) {
+  .nav > ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 .nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 .nav span {
   margin-block: 0.75em;
@@ -496,6 +525,12 @@ html:focus-within {
   background-color: hsl(var(--clr-theme));
   color: hsl(var(--clr-white));
 }
+@media only screen and (min-width: 1200px) {
+  .nav a:hover, .nav a:active {
+    background-color: transparent;
+    color: hsl(var(--clr-theme));
+  }
+}
 .nav button {
   margin-left: auto;
   display: grid;
@@ -511,6 +546,56 @@ html:focus-within {
   color: hsl(var(--clr-white));
 }
 
+@media only screen and (min-width: 1200px) {
+  .open-nav,
+.close-nav {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav > ul {
+    gap: 30px;
+  }
+  .nav > ul > li > a {
+    padding-inline: 0;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+  .dropdown:hover .dropdown__content, .dropdown:focus .dropdown__content, .dropdown:focus-within .dropdown__content, .dropdown:focus-visible .dropdown__content {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .dropdown span {
+    cursor: pointer;
+    padding-inline: 0;
+  }
+  .dropdown span:hover, .dropdown span:active {
+    color: hsl(var(--clr-theme));
+  }
+  .dropdown__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 150ms ease-in-out;
+  }
+  .dropdown__content a:hover, .dropdown__content a:active {
+    background-color: hsl(var(--clr-theme));
+    color: hsl(var(--clr-white));
+  }
+}
 .banner {
   background-repeat: no-repeat;
   background-position: center;

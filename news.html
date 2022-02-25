@@ -22,17 +22,17 @@
             </a>
           </h1>
 
-          <div>
+          <div class="header__right">
             <nav class="nav">
-              <button aria-label="close nav">
+              <button aria-label="close nav" class="close-nav">
                 <i class="fa-solid fa-xmark fa-xl"></i>
               </button>
 
               <ul>
-                <li>
+                <li class="dropdown">
                   <span>ვინ ვართ ჩვენ</span>
 
-                  <ul>
+                  <ul class="dropdown__content">
                     <li>
                       <a href="/mission.html">მისია</a>
                     </li>
@@ -45,10 +45,10 @@
                   </ul>
                 </li>
 
-                <li>
+                <li class="dropdown">
                   <span>რას ვაკეთებთ</span>
 
-                  <ul>
+                  <ul class="dropdown__content">
                     <li>
                       <a href="/parliament.html">პარლამენტი</a>
                     </li>
@@ -61,12 +61,12 @@
                   </ul>
                 </li>
 
-                <li>
-                  <span class="active">ადვოკატირება</span>
+                <li class="dropdown">
+                  <span>ადვოკატირება</span>
 
-                  <ul>
+                  <ul class="dropdown__content">
                     <li>
-                      <a href="/news.html" class="active">სიახლეები</a>
+                      <a href="/news.html">სიახლეები</a>
                     </li>
                     <li>
                       <a href="/proposals.html">წინადადებები</a>
@@ -125,7 +125,11 @@
                 </ul>
               </div>
 
-              <button type="button" aria-label="open navigation">
+              <button
+                type="button"
+                aria-label="open navigation"
+                class="open-nav"
+              >
                 <i class="fa-solid fa-bars fa-xl"></i>
               </button>
             </div>

@@ -14,15 +14,40 @@
   transform-origin: right;
   transition: all 150ms ease-in-out;
 
+  @media only screen and (min-width: 1200px) {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    min-height: unset;
+    padding-block: unset;
+    background-color: unset;
+    box-shadow: unset;
+    transform: unset;
+    overflow-y: unset;
+    opacity: 1;
+    height: 100%;
+  }
+
   &.active {
     opacity: 1;
     transform: scaleX(1);
+    z-index: 10;
+  }
+
+  & > ul {
+    margin: 0;
+    padding: 0;
+
+    @media only screen and (min-width: 1200px) {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
   }
 
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 
   span {
@@ -52,6 +77,11 @@
     &:active {
       background-color: hsl(var(--clr-theme));
       color: hsl(var(--clr-white));
+
+      @media only screen and (min-width: 1200px) {
+        background-color: transparent;
+        color: hsl(var(--clr-theme));
+      }
     }
   }
 
@@ -69,6 +99,73 @@
     &:active {
       background-color: hsl(var(--clr-theme));
       color: hsl(var(--clr-white));
+    }
+  }
+}
+
+.open-nav,
+.close-nav {
+  @media only screen and (min-width: 1200px) {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav {
+    & > ul {
+      gap: 30px;
+    }
+
+    & > ul > li > a {
+      padding-inline: 0;
+    }
+  }
+  .dropdown {
+    position: relative;
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+      .dropdown__content {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+
+    span {
+      cursor: pointer;
+      padding-inline: 0;
+
+      &:hover,
+      &:active {
+        color: hsl(var(--clr-theme));
+      }
+    }
+
+    &__content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border-radius: 0 0 10px 10px;
+      box-shadow: var(--box-shadow);
+      overflow: hidden;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: all 150ms ease-in-out;
+
+      a {
+        &:hover,
+        &:active {
+          background-color: hsl(var(--clr-theme));
+          color: hsl(var(--clr-white));
+        }
+      }
     }
   }
 }
