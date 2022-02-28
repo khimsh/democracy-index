@@ -846,6 +846,49 @@ html:focus-within {
   border-radius: 15px;
 }
 
+[data-tab-content] {
+  display: none;
+}
+[data-tab-content].active {
+  display: block;
+}
+
+.deputy__nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.deputy__nav li:first-child button {
+  border-radius: 10px 10px 0 0;
+}
+.deputy__nav li:last-child button {
+  border-radius: 0 0 10px 10px;
+}
+.deputy__nav button {
+  height: 60px;
+  font-family: var(--ff-caps);
+  font-size: 1rem;
+  color: hsl(var(--clr-black));
+  text-transform: uppercase;
+  text-align: right;
+  padding-right: 24px;
+  background-color: hsl(var(--clr-white));
+  border: 1px solid #d1d1d1;
+  transition: all 150ms ease-in-out;
+}
+.deputy__nav button:hover, .deputy__nav button:focus {
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-theme));
+  outline: none;
+}
+.deputy__nav button.active {
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-theme));
+  border-color: transparent;
+}
+
 .vacancy {
   margin-bottom: 30px;
   display: grid;
