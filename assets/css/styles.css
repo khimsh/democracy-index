@@ -837,6 +837,55 @@ html:focus-within {
   font-size: 30px;
 }
 
+.file {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 30px;
+}
+.file--w-time {
+  grid-template-columns: 3fr 2fr 2fr;
+}
+.file__title {
+  padding: 30px;
+  font-family: var(--ff-regular);
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(var(--clr-black));
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+.file__time {
+  display: grid;
+  place-content: center;
+  font-family: var(--ff-caps);
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(var(--clr-black));
+  text-transform: uppercase;
+  background-color: #f3f3f3;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+.file__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: var(--ff-caps);
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(var(--clr-white));
+  text-decoration: none;
+  background-color: hsl(var(--clr-theme));
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+.file__details i {
+  color: hsl(var(--clr-white));
+  font-size: 30px;
+}
+
 .pagination {
   margin-top: 70px;
   display: flex;
