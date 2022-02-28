@@ -1,0 +1,65 @@
+.article {
+  figure {
+    float: left;
+    margin-right: 30px;
+  }
+
+  & > * + * {
+    margin-top: 30px;
+  }
+
+  &__footer {
+    margin-top: 35px;
+
+    ul,
+    ol {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__actions {
+    margin-top: 45px;
+    display: flex;
+    gap: 20px;
+
+    a {
+      height: 50px;
+      padding-inline: 18px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-radius: 10px;
+
+      span {
+        font-family: var(--ff-caps);
+        color: hsl(var(--clr-white));
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      i {
+        color: hsl(var(--clr-white));
+      }
+    }
+  }
+
+  &__share-fb {
+    background-color: #0071c8;
+  }
+
+  &__backlink {
+    background-color: hsl(var(--clr-theme));
+  }
+}
+
+.date {
+  font-family: var(--ff-regular);
+  font-size: 1rem;
+  color: #707070;
+}

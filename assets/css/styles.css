@@ -635,6 +635,61 @@ html:focus-within {
     color: hsl(var(--clr-white));
   }
 }
+.article figure {
+  float: left;
+  margin-right: 30px;
+}
+.article > * + * {
+  margin-top: 30px;
+}
+.article__footer {
+  margin-top: 35px;
+}
+.article__footer ul,
+.article__footer ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.article__actions {
+  margin-top: 45px;
+  display: flex;
+  gap: 20px;
+}
+.article__actions a {
+  height: 50px;
+  padding-inline: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+.article__actions a span {
+  font-family: var(--ff-caps);
+  color: hsl(var(--clr-white));
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.article__actions a i {
+  color: hsl(var(--clr-white));
+}
+.article__share-fb {
+  background-color: #0071c8;
+}
+.article__backlink {
+  background-color: hsl(var(--clr-theme));
+}
+
+.date {
+  font-family: var(--ff-regular);
+  font-size: 1rem;
+  color: #707070;
+}
+
 .banner {
   background-repeat: no-repeat;
   background-position: center;
