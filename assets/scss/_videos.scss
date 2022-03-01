@@ -1,0 +1,120 @@
+.videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  &--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.video {
+  &__placeholder {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 6 / 4;
+    overflow: hidden;
+
+    &--rounded {
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    background: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+      i {
+        color: hsl(var(--clr-white));
+      }
+    }
+
+    i {
+      font-size: 5rem;
+      color: hsl(var(--clr-theme));
+      transition: all 150ms ease-in-out;
+    }
+  }
+
+  &__title {
+    margin-top: 30px;
+    font-family: var(--ff-caps);
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(var(--clr-black));
+    text-transform: uppercase;
+
+    &--sm {
+      margin-top: 20px;
+      font-size: 12px;
+    }
+  }
+}
+
+// .video-gallery {
+//   display: grid;
+//   grid-template-columns: 4fr 6fr;
+//   column-gap: 30px;
+
+//   ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   .video-list__item {
+//     padding-block: 20px;
+//     border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+//   }
+
+//   .video-list__btn {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     gap: 10px;
+//     background-color: transparent;
+//     border: none;
+//   }
+
+//   .video-list__btn {
+//     font-family: var(--ff-regular);
+//     font-size: 20px;
+//     font-weight: 500;
+//     color: var(--clr-white);
+//     text-decoration: none;
+//     text-align: left;
+//   }
+
+//   .play-icon--small {
+//     width: 24px;
+//     height: 24px;
+//   }
+
+//   .play-icon {
+//     flex-shrink: 0;
+//     display: grid;
+//     place-content: center;
+//     border: 2px solid var(--clr-theme);
+//     border-radius: 200px;
+//     transition: all 0.15s ease-in-out;
+//   }
+
+//   .video-gallery__player iframe {
+//     width: 100%;
+//     aspect-ratio: 16/9;
+//   }
+// }

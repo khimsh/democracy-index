@@ -101,3 +101,9 @@ html:focus-within {
     }
   }
 }
+
+.content-wrapper {
+  padding: 22px 30px;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}

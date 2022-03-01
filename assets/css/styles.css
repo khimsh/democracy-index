@@ -175,6 +175,12 @@ html:focus-within {
   color: #343434;
 }
 
+.content-wrapper {
+  padding: 22px 30px;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+
 .container {
   max-width: 1380px;
   width: 100%;
@@ -606,6 +612,59 @@ html:focus-within {
   display: grid;
   grid-template-columns: 315px auto;
   gap: 30px;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.videos--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.video__placeholder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 6/4;
+  overflow: hidden;
+}
+.video__placeholder--rounded {
+  border-radius: 10px;
+}
+.video__placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  background: transparent;
+  border: none;
+}
+.video__btn:hover i, .video__btn:focus i {
+  color: hsl(var(--clr-white));
+}
+.video__btn i {
+  font-size: 5rem;
+  color: hsl(var(--clr-theme));
+  transition: all 150ms ease-in-out;
+}
+.video__title {
+  margin-top: 30px;
+  font-family: var(--ff-caps);
+  font-size: 20px;
+  font-weight: 400;
+  color: hsl(var(--clr-black));
+  text-transform: uppercase;
+}
+.video__title--sm {
+  margin-top: 20px;
+  font-size: 12px;
 }
 
 .nav {
