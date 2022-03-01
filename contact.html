@@ -7,13 +7,14 @@
     <title>დემოკრატიის ინდექსი საქართველო | კონტაქტი</title>
 
     <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__content">
           <h1 class="header__logo">
-            <a href="/" aria-label="დაბრუნდი მთავარ გვერდზე">
+            <a href="index.html" aria-label="დაბრუნდი მთავარ გვერდზე">
               <img
                 src="assets/images/di-ge.png"
                 alt="დემოკრატიის ინდექსი საქართველო"
@@ -137,105 +138,112 @@
       </div>
     </header>
 
-    <div
-      class="banner"
-      style="background-image: url(assets/images/contact.jpg)"
-    >
+    <div class="contact">
+      <div
+        class="contact__banner"
+        style="background-image: url(assets/images/contact.jpg)"
+      >
+        <div class="container">
+          <h1 class="page-title">კონტაქტი</h1>
+        </div>
+      </div>
+
       <div class="container">
-        <h1 class="page-title">კონტაქტი</h1>
+        <div class="contact__address">
+          <div>
+            <div class="contact__address__logo">
+              <svg width="45" height="69.844">
+                <use href="assets/images/pin.svg#pin" />
+              </svg>
+            </div>
+
+            <h3>მისამართი</h3>
+
+            <p>ალექსანდრე ყაზბეგის გამზირი #2, თბილისი</p>
+          </div>
+
+          <div>
+            <div class="contact__address__logo">
+              <svg width="70" height="49">
+                <use href="assets/images/envelope.svg#envelope" />
+              </svg>
+            </div>
+
+            <h3>ტელეფონი/ელ.ფოსტა</h3>
+
+            <a href="tel:+995577070577">577070577</a>
+            <a href="mailto:info@democracyindex.ge">info@democracyindex.ge</a>
+          </div>
+
+          <div>
+            <div class="contact__address__logo">
+              <svg width="70.346" height="69.958">
+                <use href="assets/images/connect.svg#connect" />
+              </svg>
+            </div>
+
+            <h3>შემოგვიერთდით</h3>
+
+            <p>გვიპოვეთ სიციალურ ქსელში</p>
+
+            <ul class="contact__social">
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="grid">
-        <div>
-          <svg>
-            <use href="assets/images/pin.svg#pin" />
-          </svg>
+      <div class="contact__options">
+        <div id="map"></div>
 
-          <h3>მისამართი</h3>
+        <div class="contact__form">
+          <form action="#">
+            <h2>მოგვწერეთ</h2>
 
-          <p>ალექსანდრე ყაზბეგის გამზირი #2, თბილისი</p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ელ.ფოსტა*"
+              required
+            />
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="სათაური*"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="შეტყობინება*"
+              required
+            ></textarea>
+
+            <button type="submit">გაგზავნა</button>
+          </form>
         </div>
-
-        <div>
-          <svg>
-            <use href="assets/images/envelope.svg#envelope" />
-          </svg>
-
-          <h3>ტელეფონი/ელ.ფოსტა</h3>
-
-          <a href="tel:+995577070577">577070577</a>
-          <a href="mailto:info@democracyindex.ge">info@democracyindex.ge</a>
-        </div>
-
-        <div>
-          <svg>
-            <use href="assets/images/connect.svg#connect" />
-          </svg>
-
-          <h3>შემოგვიერთდით</h3>
-
-          <p>გვიპოვეთ სიციალურ ქსელში</p>
-          <ul class="social-media">
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div id="map"></div>
-
-      <div>
-        <form action="#">
-          <h2>მოგვწერეთ</h2>
-
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="ელ.ფოსტა*"
-            required
-          />
-          <input
-            type="text"
-            name="title"
-            id="title"
-            placeholder="სათაური*"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="შეტყობინება*"
-            required
-          ></textarea>
-
-          <button type="submit">გაგზავნა</button>
-        </form>
       </div>
     </div>
 
     <footer class="footer">
       <div class="container">
-        <div class="grid">
+        <div class="footer__wrapper">
           <img src="assets/images/di-ge.png" alt="" />
 
           <ul>
@@ -268,7 +276,7 @@
 
             <a href="tel:+577070577">577070577</a>
 
-            <ul class="social-media">
+            <ul class="social-media mt-2">
               <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-facebook-f"></i>

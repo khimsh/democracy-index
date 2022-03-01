@@ -187,6 +187,120 @@ html:focus-within {
   margin-bottom: 70px;
 }
 
+.contact__banner {
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact__banner .container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.contact__address {
+  padding-block: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 276px);
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+}
+.contact__address__logo {
+  margin-bottom: 36px;
+  height: 70px;
+  display: grid;
+  place-content: center;
+}
+.contact__address h3 {
+  margin-bottom: 15px;
+  font-family: var(--ff-caps);
+  font-size: 20px;
+  font-weight: 400;
+  color: hsl(var(--clr-black));
+  text-transform: uppercase;
+}
+.contact__address p,
+.contact__address a {
+  font-size: 1rem;
+  color: #707070;
+}
+.contact__address a {
+  text-decoration: none;
+}
+.contact__social {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.contact__social i {
+  color: #707070;
+}
+.contact__options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact__form {
+  padding: 28px 30px;
+  background-color: #484848;
+}
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+  color: hsl(var(--clr-white));
+  max-width: 690px;
+}
+.contact__form h2 {
+  font-family: var(--ff-caps);
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.contact__form input,
+.contact__form textarea {
+  margin-bottom: 15px;
+  padding-block: 15px;
+  font-family: inherit;
+  font-size: 14px;
+  color: hsl(var(--clr-white));
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid hsl(var(--clr-white));
+  transition: all 150ms ease-in-out;
+}
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  font-family: inherit;
+  color: inherit;
+}
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+  border-color: hsl(var(--clr-theme));
+}
+.contact__form button {
+  align-self: flex-end;
+  width: 176px;
+  height: 56px;
+  font-family: var(--ff-caps);
+  font-size: 14px;
+  color: hsl(var(--clr-white));
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid hsl(var(--clr-white));
+  transition: all 150ms ease-in-out;
+}
+.contact__form button:hover, .contact__form button:focus {
+  outline: none;
+  background-color: hsl(var(--clr-theme));
+  border-color: transparent;
+}
+
 /* Header */
 .header {
   box-shadow: var(--box-shadow);

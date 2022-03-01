@@ -1,0 +1,132 @@
+.contact {
+  &__banner {
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .container {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__address {
+    padding-block: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 276px);
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+
+    &__logo {
+      margin-bottom: 36px;
+      height: 70px;
+      display: grid;
+      place-content: center;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      font-family: var(--ff-caps);
+      font-size: 20px;
+      font-weight: 400;
+      color: hsl(var(--clr-black));
+      text-transform: uppercase;
+    }
+
+    p,
+    a {
+      font-size: 1rem;
+      color: #707070;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    i {
+      color: #707070;
+    }
+  }
+
+  &__options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__form {
+    padding: 28px 30px;
+
+    background-color: #484848;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      color: hsl(var(--clr-white));
+      max-width: calc(1380px / 2);
+    }
+
+    h2 {
+      font-family: var(--ff-caps);
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 15px;
+      padding-block: 15px;
+      font-family: inherit;
+      font-size: 14px;
+      color: hsl(var(--clr-white));
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid hsl(var(--clr-white));
+      transition: all 150ms ease-in-out;
+
+      &::placeholder {
+        font-family: inherit;
+        color: inherit;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: hsl(var(--clr-theme));
+      }
+    }
+
+    button {
+      align-self: flex-end;
+      width: 176px;
+      height: 56px;
+      font-family: var(--ff-caps);
+      font-size: 14px;
+      color: hsl(var(--clr-white));
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 1px solid hsl(var(--clr-white));
+      transition: all 150ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        background-color: hsl(var(--clr-theme));
+        border-color: transparent;
+      }
+    }
+  }
+}
