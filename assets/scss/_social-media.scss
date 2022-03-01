@@ -3,6 +3,10 @@
   gap: 20px;
   list-style-type: none;
 
+  &--right {
+    justify-content: flex-end;
+  }
+
   a {
     width: 30px;
     height: 30px;
