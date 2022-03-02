@@ -18,19 +18,19 @@
 
 /* ფერი */
 .text-white {
-  color: hsl(var(--clr-white));
+  color: hsl(var(--clr-white)) !important;
 }
 
 .text-black {
-  color: hsl(var(--clr-black));
+  color: hsl(var(--clr-black)) !important;
 }
 
 .text-gray {
-  color: hsl(var(--clr-gray));
+  color: hsl(var(--clr-gray)) !important;
 }
 
 .text-accent {
-  color: hsl(var(--clr-theme));
+  color: hsl(var(--clr-theme)) !important;
 }
 
 /* დაშორებები */

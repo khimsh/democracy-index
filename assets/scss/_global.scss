@@ -107,3 +107,13 @@ html:focus-within {
   box-shadow: var(--box-shadow);
   border-radius: 10px;
 }
+
+.heading-2 {
+  margin-bottom: 16px;
+  font-family: var(--ff-caps);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: hsl(var(--clr-black));
+  text-transform: uppercase;
+  text-align: center;
+}

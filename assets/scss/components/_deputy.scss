@@ -292,3 +292,41 @@
     color: hsl(var(--clr-black));
   }
 }
+
+.analitycs-block {
+  margin-bottom: 30px;
+
+  &--lg {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: var(--ff-caps);
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(var(--clr-black));
+    text-transform: uppercase;
+    text-align: center;
+
+    &--lg {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 20px;
+    margin-left: auto;
+    display: block;
+    width: 425px;
+    height: 50px;
+    font-family: var(--ff-caps);
+    font-size: 1rem;
+    color: hsl(var(--clr-white));
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #858585;
+    border: none;
+    box-shadow: var(--box-shadow);
+  }
+}
