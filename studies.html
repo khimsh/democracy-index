@@ -7,13 +7,14 @@
     <title>დემოკრატიის ინდექსი საქართველო | კვლევები</title>
 
     <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__content">
           <h1 class="header__logo">
-            <a href="/" aria-label="დაბრუნდი მთავარ გვერდზე">
+            <a href="index.html" aria-label="დაბრუნდი მთავარ გვერდზე">
               <img
                 src="assets/images/di-ge.png"
                 alt="დემოკრატიის ინდექსი საქართველო"
@@ -77,7 +78,7 @@
                       <a href="blogs.html">ბლოგები</a>
                     </li>
                     <li>
-                      <a href="#">ვიდეოები</a>
+                      <a href="videos.html">ვიდეოები</a>
                     </li>
                   </ul>
                 </li>
@@ -137,28 +138,60 @@
       </div>
     </header>
 
-    <div class="container">
-      <h1 class="page-title">კვლევები</h1>
+    <div class="page-wrapper">
+      <div class="container">
+        <h1 class="page-title">კვლევები</h1>
 
-      <!-- TODO: filters -->
-
-      <div>
-        <div>
-          ნორმატიული აქტის აღსრულების კონტროლის მექანიზმის ამოქმედება
-          პარლამენტის მიერ აზარალებულის სტატუსის სამართლებრივი და პრაქტიკული
-          მოწესრიგების მიზნით
+        <!-- ფილტრები -->
+        <div class="filters">
+          <button class="filter">2021 წელი</button>
+          <button class="filter">2021 წელი</button>
         </div>
 
-        <a href="#">
-          <i class="fa-solid fa-file-pdf"></i>
-          <span>ფაილის ნახვა</span>
-        </a>
+        <div class="file">
+          <h2 class="file__title">
+            ნორმატიული აქტის აღსრულების კონტროლის მექანიზმის ამოქმედება
+            პარლამენტის მიერ აზარალებულის სტატუსის სამართლებრივი და პრაქტიკული
+            მოწესრიგების მიზნით
+          </h2>
+
+          <a href="#" class="file__details">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>ფაილის ნახვა</span>
+          </a>
+        </div>
+
+        <div class="file">
+          <h2 class="file__title">
+            ნორმატიული აქტის აღსრულების კონტროლის მექანიზმის ამოქმედება
+            პარლამენტის მიერ აზარალებულის სტატუსის სამართლებრივი და პრაქტიკული
+            მოწესრიგების მიზნით
+          </h2>
+
+          <a href="#" class="file__details">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>ფაილის ნახვა</span>
+          </a>
+        </div>
+
+        <div class="file">
+          <h2 class="file__title">
+            ნორმატიული აქტის აღსრულების კონტროლის მექანიზმის ამოქმედება
+            პარლამენტის მიერ აზარალებულის სტატუსის სამართლებრივი და პრაქტიკული
+            მოწესრიგების მიზნით
+          </h2>
+
+          <a href="#" class="file__details">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>ფაილის ნახვა</span>
+          </a>
+        </div>
       </div>
     </div>
 
     <footer class="footer">
       <div class="container">
-        <div class="grid">
+        <div class="footer__wrapper">
           <img src="assets/images/di-ge.png" alt="" />
 
           <ul>
@@ -191,7 +224,7 @@
 
             <a href="tel:+577070577">577070577</a>
 
-            <ul class="social-media">
+            <ul class="social-media mt-2">
               <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-facebook-f"></i>

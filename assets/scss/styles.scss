@@ -32,11 +32,13 @@
 
 @use 'components/deputy';
 
-@use 'components/accordion.scss';
+@use 'components/accordion';
 
 @use 'components/vacancy';
 
 @use 'components/file';
+
+@use 'components/filter';
 
 @use 'components/pagination';
 

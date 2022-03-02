@@ -1492,6 +1492,30 @@ html:focus-within {
   font-size: 30px;
 }
 
+.filters {
+  margin-block: 38px 57px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter {
+  padding-inline: 20px;
+  height: 56px;
+  font-family: var(--ff-caps);
+  font-size: 1rem;
+  color: hsl(var(--clr-black));
+  text-transform: uppercase;
+  background-color: hsl(var(--clr-white));
+  border: 1px solid hsl(var(--clr-theme));
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+.filter:hover, .filter:focus, .filter.active {
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-theme));
+}
+
 .pagination {
   margin-top: 70px;
   display: flex;
