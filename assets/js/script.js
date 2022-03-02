@@ -12,3 +12,26 @@ tabs.forEach((tab) => {
     target.classList.add('active');
   });
 });
+
+if (document.querySelector('[data-accordion]')) {
+  const accordions = document.querySelectorAll('[data-accordion]');
+
+  accordions.forEach((dropdown) => {
+    const trigger = dropdown.querySelector('[data-trigger]');
+
+    trigger.addEventListener('click', toggleAccordion);
+  });
+
+  function toggleAccordion() {
+    const clickedItem = this.parentNode.parentNode.parentNode;
+
+    accordions.forEach((item) => {
+      if (clickedItem === item) {
+        clickedItem.classList.toggle('active');
+        return;
+      }
+
+      item.classList.remove('active');
+    });
+  }
+}

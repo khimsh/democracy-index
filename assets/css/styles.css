@@ -1292,6 +1292,67 @@ html:focus-within {
   color: hsl(var(--clr-black));
 }
 
+.accordion__trigger {
+  margin-bottom: 30px;
+}
+.accordion__trigger h2 {
+  font-family: var(--ff-caps);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: hsl(var(--clr-black));
+}
+.accordion__trigger button {
+  padding: 14px 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+.accordion__trigger button i {
+  transform: translateY(-5px);
+  color: hsl(var(--clr-theme));
+  transition: all 150ms ease-in-out;
+}
+.accordion.active .accordion__content {
+  max-height: 2000px;
+  transform: scaleY(1);
+  opacity: 1;
+  margin-bottom: 30px;
+}
+.accordion.active i {
+  transform: rotate(180deg);
+}
+.accordion__content {
+  max-height: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: all 150ms ease-in-out;
+}
+.accordion__content .content-wrapper > * + * {
+  margin-top: 20px;
+}
+.accordion__content .content-wrapper ul,
+.accordion__content .content-wrapper ol {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.divider {
+  margin-block: 30px;
+  width: 200px;
+  height: 1px;
+  background-color: hsl(var(--clr-black));
+}
+
 .vacancy {
   margin-bottom: 30px;
   display: grid;
