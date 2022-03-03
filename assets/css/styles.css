@@ -1654,8 +1654,37 @@ html:focus-within {
   grid-template-columns: 5fr 2fr;
   gap: 30px;
 }
+@media only screen and (max-width: 680px) {
+  .file {
+    margin-bottom: 50px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
 .file--w-time {
   grid-template-columns: 3fr 2fr 2fr;
+}
+@media only screen and (max-width: 1080px) {
+  .file--w-time {
+    grid-template-columns: 1fr 1fr;
+  }
+  .file--w-time .file__title {
+    grid-column: span 2;
+  }
+  .file--w-time .file__details,
+.file--w-time .file__time {
+    padding-block: 10px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .file--w-time {
+    grid-template-columns: 1fr;
+  }
+  .file--w-time .file__title,
+.file--w-time .file__details,
+.file--w-time .file__time {
+    grid-column: 1/2;
+  }
 }
 .file__title {
   padding: 30px;
@@ -1692,9 +1721,24 @@ html:focus-within {
   box-shadow: var(--box-shadow);
   border-radius: 10px;
 }
+@media only screen and (max-width: 680px) {
+  .file__details {
+    padding-block: 10px;
+  }
+}
 .file__details i {
   color: hsl(var(--clr-white));
   font-size: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .file__details span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .file__details span {
+    display: block;
+  }
 }
 
 .filters {
