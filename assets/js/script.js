@@ -35,3 +35,16 @@ if (document.querySelector('[data-accordion]')) {
     });
   }
 }
+
+// Navigation
+const openNav = document.querySelector('.open-nav');
+const closeNav = document.querySelector('.close-nav');
+const mainNav = document.querySelector('.nav');
+
+openNav.addEventListener('click', () => {
+  mainNav.classList.add('active');
+});
+
+closeNav.addEventListener('click', () => {
+  mainNav.classList.remove('active');
+});

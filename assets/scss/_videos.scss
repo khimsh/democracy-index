@@ -3,8 +3,16 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
   &--3 {
     grid-template-columns: repeat(3, 1fr);
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -52,10 +60,15 @@
   &__title {
     margin-top: 30px;
     font-family: var(--ff-caps);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color: hsl(var(--clr-black));
     text-transform: uppercase;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 1em;
+      font-size: 1rem;
+    }
 
     &--sm {
       margin-top: 20px;

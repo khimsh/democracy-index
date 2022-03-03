@@ -142,8 +142,11 @@
 
     <div class="page-wrapper">
       <div class="container">
+        <!-- დეპუტატი -->
         <div class="deputy">
+          <!-- ტაბების კონტენტი -->
           <div class="deputy__tabs">
+            <!-- ტაბი: ზოგადი ინფო -->
             <div id="general-info" class="active" data-tab-content>
               <div class="general-info">
                 <div class="general-info__col">
@@ -234,6 +237,7 @@
               </div>
             </div>
 
+            <!-- ტაბი: სიტყვით გამოსვლები -->
             <div id="speeches" data-tab-content>
               <div class="content-wrapper">
                 <div class="videos videos--3">
@@ -321,6 +325,7 @@
               </div>
             </div>
 
+            <!-- ტაბი:ინიციატივები -->
             <div id="initiatives" data-tab-content>
               <div class="content-wrapper">
                 <div class="accordion" data-accordion>
@@ -472,6 +477,7 @@
               </div>
             </div>
 
+            <!-- ტაბი: კანონპროექტების მხარდაჭერა -->
             <div id="support" data-tab-content>
               <div class="content-wrapper">
                 <div class="accordion" data-accordion>
@@ -623,6 +629,7 @@
               </div>
             </div>
 
+            <!-- ტაბი: კითხვები -->
             <div id="questions" data-tab-content>
               <div class="content-wrapper">
                 <div class="file">
@@ -663,6 +670,7 @@
               </div>
             </div>
 
+            <!-- ტაბი: ინტერპელაცია -->
             <div id="interpellation" data-tab-content>
               <div class="content-wrapper">
                 <div class="file">
@@ -703,6 +711,7 @@
               </div>
             </div>
 
+            <!-- ტაბი: ფინანსური ინფორმაცია -->
             <div id="financial-info" data-tab-content>
               <div class="content-wrapper">
                 <div class="file">
@@ -716,6 +725,7 @@
               </div>
             </div>
 
+            <!-- ტაბი: მოქალაქეთა განცხადებები -->
             <div id="citizen-notices" data-tab-content>
               <div class="content-wrapper">
                 <div class="file">
@@ -756,6 +766,7 @@
               </div>
             </div>
 
+            <!-- ტაბი: მნიშვნელოვანი შეხვედრები -->
             <div id="meetings" data-tab-content>
               <div class="content-wrapper">
                 <div class="file">
@@ -796,6 +807,7 @@
               </div>
             </div>
 
+            <!-- ტაბი: ანალიტიკა -->
             <div id="analitycs" data-tab-content>
               <div class="analitycs-block">
                 <div class="content-wrapper">
@@ -853,8 +865,10 @@
             </div>
           </div>
 
+          <!-- დეპუტატის შესახებ -->
           <div class="deputy__info">
             <div class="deputy__bio">
+              <!-- პერსონალური ინფორმაცია -->
               <div class="deputy__personal-info">
                 <h2 class="deputy__name">იაგო ხვიჩია</h2>
                 <p>X მოწვევა</p>
@@ -869,7 +883,7 @@
                   <p class="text-accent">გირჩი</p>
                 </div>
 
-                <div>
+                <div class="deputy__contact-links">
                   <a href="tel:+995322281253" class="deputy__link">
                     <span>(+99532)2281253</span>
                     <i class="fa-solid fa-phone"></i>
@@ -882,15 +896,15 @@
                     <span>i.khvichia@parliament.ge</span>
                     <i class="fa-solid fa-envelope"></i>
                   </a>
+                </div>
 
-                  <div class="deputy__birthdate">
-                    <div>
-                      <h3>დაბადების თარიღი</h3>
-                      <p>20.01.1977</p>
-                    </div>
-
-                    <i class="fa-solid fa-calendar-days"></i>
+                <div class="deputy__birthdate">
+                  <div>
+                    <h3>დაბადების თარიღი</h3>
+                    <p>20.01.1977</p>
                   </div>
+
+                  <i class="fa-solid fa-calendar-days"></i>
                 </div>
 
                 <ul class="social-media social-media--right">
@@ -925,66 +939,69 @@
               </div>
             </div>
 
-            <div class="deputy__nav">
-              <ul>
-                <li>
-                  <button class="active" data-tab-target="#general-info">
-                    ზოგადი ინფორმაცია
-                  </button>
-                </li>
-                <li>
-                  <button data-tab-target="#speeches">
-                    სიტყვით გამოსვლები
-                  </button>
-                </li>
-                <li>
-                  <button data-tab-target="#initiatives">ინიციატივები</button>
-                </li>
-                <li>
-                  <button data-tab-target="#support">
-                    მნიშვნელოვანი კანონპროექტების მხარდაჭერა
-                  </button>
-                </li>
-                <li>
-                  <button data-tab-target="#questions">
-                    სადეპუტატო კითხვა
-                  </button>
-                </li>
-                <li>
-                  <button data-tab-target="#interpellation">
-                    ინტერპელაცია
-                  </button>
-                </li>
-                <li>
-                  <button data-tab-target="#financial-info">
-                    ფინანსური ინფორმაცია
-                  </button>
-                </li>
-                <li>
-                  <button data-tab-target="#citizen-notices">
-                    მოქალაქეთა განცხადებები
-                  </button>
-                </li>
-                <li>
-                  <button data-tab-target="#meetings">
-                    მნიშვნელოვანი შეხვედრები
-                  </button>
-                </li>
-              </ul>
-            </div>
+            <div>
+              <!-- ტაბებს შორის ნავიგაცია -->
+              <div class="deputy__nav">
+                <ul>
+                  <li>
+                    <button class="active" data-tab-target="#general-info">
+                      ზოგადი ინფორმაცია
+                    </button>
+                  </li>
+                  <li>
+                    <button data-tab-target="#speeches">
+                      სიტყვით გამოსვლები
+                    </button>
+                  </li>
+                  <li>
+                    <button data-tab-target="#initiatives">ინიციატივები</button>
+                  </li>
+                  <li>
+                    <button data-tab-target="#support">
+                      მნიშვნელოვანი კანონპროექტების მხარდაჭერა
+                    </button>
+                  </li>
+                  <li>
+                    <button data-tab-target="#questions">
+                      სადეპუტატო კითხვა
+                    </button>
+                  </li>
+                  <li>
+                    <button data-tab-target="#interpellation">
+                      ინტერპელაცია
+                    </button>
+                  </li>
+                  <li>
+                    <button data-tab-target="#financial-info">
+                      ფინანსური ინფორმაცია
+                    </button>
+                  </li>
+                  <li>
+                    <button data-tab-target="#citizen-notices">
+                      მოქალაქეთა განცხადებები
+                    </button>
+                  </li>
+                  <li>
+                    <button data-tab-target="#meetings">
+                      მნიშვნელოვანი შეხვედრები
+                    </button>
+                  </li>
+                </ul>
+              </div>
 
-            <div class="deputy__analitycs" data-tab-target="#analitycs">
-              <button>
-                <i class="fa-solid fa-chart-bar"></i>
-                <span>ანალიტიკა</span>
-              </button>
-            </div>
+              <div class="deputy__analitycs" data-tab-target="#analitycs">
+                <button>
+                  <i class="fa-solid fa-chart-bar"></i>
+                  <span>ანალიტიკა</span>
+                </button>
+              </div>
 
-            <div class="deputy__backlink">
-              <a href="#">
-                <i class="fa-solid fa-caret-left"></i>
-                <span>უკან დაბრუნეა</span>
-              </a>
+              <div class="deputy__backlink">
+                <a href="#">
+                  <i class="fa-solid fa-caret-left"></i>
+                  <span>უკან დაბრუნეა</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,21 @@
 .article {
-  figure {
+  &__image {
     float: left;
     margin-right: 30px;
+    max-width: 730px;
+    width: 50%;
+
+    @media only screen and (max-width: 992px) {
+      float: unset;
+      margin-right: unset;
+      width: 100%;
+      max-width: unset;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   & > * + * {

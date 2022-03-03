@@ -15,10 +15,14 @@
   &__address {
     padding-block: 80px;
     display: grid;
-    grid-template-columns: repeat(3, 276px);
+    grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
     justify-content: center;
     gap: 100px;
     text-align: center;
+
+    @media only screen and (max-width: 768px) {
+      gap: 50px;
+    }
 
     &__logo {
       margin-bottom: 36px;
@@ -57,14 +61,35 @@
     align-items: center;
     gap: 30px;
 
+    a {
+      &:hover,
+      &:active,
+      &:focus {
+        outline: none;
+
+        i {
+          color: hsl(var(--clr-theme));
+        }
+      }
+    }
+
     i {
       color: #707070;
+      transition: color 150ms ease-in-out;
     }
   }
 
   &__options {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media only screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+
+      #map {
+        height: 400px;
+      }
+    }
   }
 
   &__form {
@@ -77,6 +102,12 @@
       flex-direction: column;
       color: hsl(var(--clr-white));
       max-width: calc(1380px / 2);
+
+      @media only screen and (max-width: 1200px) {
+        max-width: 540px;
+        width: 100%;
+        margin: 0 auto;
+      }
     }
 
     h2 {

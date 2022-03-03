@@ -2,9 +2,14 @@
   display: flex;
   gap: 20px;
   list-style-type: none;
+  padding: 0;
 
   &--right {
     justify-content: flex-end;
+
+    @media only screen and (max-width: 880px) {
+      justify-content: center;
+    }
   }
 
   a {

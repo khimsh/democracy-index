@@ -8,11 +8,35 @@
 
 .deputy {
   display: grid;
-  grid-template-columns: 1fr 426px;
+  grid-template-columns: 1fr;
   gap: 30px;
+
+  @media only screen and (min-width: 1080px) {
+    grid-template-columns: 1fr 426px;
+  }
+
+  &__tabs {
+    @media only screen and (max-width: 1080px) {
+      grid-row: 2/3;
+    }
+  }
 
   &__tabs > div {
     height: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media only screen and (max-width: 1080px) {
+      flex-direction: row;
+    }
+
+    @media only screen and (max-width: 880px) {
+      flex-direction: column;
+    }
   }
 
   &__personal-info {
@@ -22,13 +46,24 @@
   }
 
   &__bio {
-    margin-bottom: 30px;
     padding: 20px 30px;
     display: flex;
     gap: 30px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     text-align: right;
+    height: max-content;
+
+    @media only screen and (max-width: 880px) {
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 560px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 50px;
+      text-align: center;
+    }
 
     h3 {
       font-family: var(--ff-caps);
@@ -43,26 +78,69 @@
     }
   }
 
+  &__contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    @media only screen and (min-width: 560px) {
+      justify-content: flex-end;
+    }
+  }
+
   &__link {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 11px;
-    font-size: 10px;
-    color: hsl(var(--clr-black));
     text-decoration: none;
+
+    @media only screen and (min-width: 560px) {
+      justify-content: flex-end;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+
+      span,
+      i {
+        color: hsl(var(--clr-theme));
+      }
+    }
+
+    span {
+      font-size: 10px;
+      color: hsl(var(--clr-black));
+      transition: color 150ms ease-in-out;
+    }
 
     i {
       flex-shrink: 0;
       color: #707070;
+      transition: color 150ms ease-in-out;
     }
   }
 
   &__birthdate {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 11px;
+
+    @media only screen and (min-width: 560px) {
+      justify-content: flex-end;
+    }
+
+    h3 {
+      font-size: 8px;
+    }
+
+    p {
+      font-size: 10px;
+    }
 
     i {
       color: #707070;
@@ -87,7 +165,7 @@
 
   &__party {
     position: absolute;
-    top: 55%;
+    top: 125px;
     left: 50%;
     transform: translateX(-50%);
     width: 72px;
@@ -239,9 +317,13 @@
 
 .general-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   height: 100%;
+
+  @media only screen and (min-width: 1300px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   &__col {
     background-color: hsl(var(--clr-white));

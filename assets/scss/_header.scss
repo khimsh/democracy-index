@@ -112,10 +112,10 @@
         transform: scaleY(1);
       }
 
-      button {
-        color: hsl(var(--clr-white));
-        background-color: hsl(var(--clr-theme));
-      }
+      // button {
+      //   color: hsl(var(--clr-white));
+      //   background-color: hsl(var(--clr-theme));
+      // }
     }
 
     button {
@@ -123,6 +123,8 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      color: hsl(var(--clr-white));
+      background-color: hsl(var(--clr-theme));
 
       i {
         transform: translateY(-2px);
