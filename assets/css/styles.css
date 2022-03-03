@@ -1767,6 +1767,67 @@ html:focus-within {
   background-color: hsl(var(--clr-theme));
 }
 
+.party-filter {
+  position: relative;
+  max-width: 426px;
+  width: 100%;
+}
+.party-filter:hover > .party-filter__list, .party-filter:focus > .party-filter__list {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.party-filter__btn {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d1d1d1;
+  background-color: hsl(var(--clr-white));
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  max-width: 426px;
+  width: 100%;
+}
+.party-filter__btn i {
+  color: hsl(var(--clr-theme));
+}
+.party-filter__list {
+  position: absolute;
+  top: 100%;
+  border-radius: 10px;
+  max-width: 426px;
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(var(--clr-white));
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 150ms ease-in-out;
+}
+.party-filter__list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.party-filter__list ul li button {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: hsl(var(--clr-white));
+  border: none;
+  text-align: left;
+  transition: all 150ms ease-in-out;
+}
+.party-filter__list ul li button:hover, .party-filter__list ul li button:active, .party-filter__list ul li button:focus, .party-filter__list ul li button.active {
+  outline: none;
+  background-color: hsl(var(--clr-theme));
+  color: hsl(var(--clr-white));
+}
+.party-filter__list ul li:not(:last-child) {
+  border-bottom: 1px solid #d1d1d1;
+}
+
 .pagination {
   margin-top: 70px;
   display: flex;

@@ -48,3 +48,26 @@ openNav.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
   mainNav.classList.remove('active');
 });
+
+// party filter
+if (document.querySelector('.party-filter')) {
+  const filters = document.querySelectorAll('[data-party]');
+  const filterDisplayed = document.querySelector('.party-filter__text');
+
+  filters.forEach((filter) => {
+    filter.addEventListener('click', function () {
+      const currentFilter = this;
+
+      filters.forEach((filter) => {
+        if (filter !== currentFilter) {
+          filter.classList.remove('active');
+          return;
+        }
+
+        filter.classList.add('active');
+        const currentFilterText = filter.dataset.party;
+        filterDisplayed.textContent = currentFilterText;
+      });
+    });
+  });
+}
