@@ -73,6 +73,14 @@
       transform: scaleY(0);
       transform-origin: top;
       transition: all 150ms ease-in-out;
+      width: 333px;
+
+      @media only screen and (max-width: 520px) {
+        width: 200px;
+        right: unset;
+        left: -140px;
+        top: 100%;
+      }
 
       &.active {
         opacity: 1;
@@ -80,12 +88,17 @@
       }
 
       input {
+        width: 100%;
         padding: 16px 35px;
         background-color: hsl(var(--clr-white));
         border: 1px solid #e9e9e9;
         border-radius: 10px;
         box-shadow: var(--box-shadow);
         transition: all 150ms ease-in-out;
+
+        @media only screen and (max-width: 520px) {
+          padding: 10px 15px;
+        }
 
         &:focus {
           outline-color: hsl(var(--clr-theme));
@@ -111,11 +124,6 @@
         opacity: 1;
         transform: scaleY(1);
       }
-
-      // button {
-      //   color: hsl(var(--clr-white));
-      //   background-color: hsl(var(--clr-theme));
-      // }
     }
 
     button {

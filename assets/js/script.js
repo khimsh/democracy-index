@@ -71,3 +71,26 @@ if (document.querySelector('.party-filter')) {
     });
   });
 }
+
+if (document.querySelector('.index-tabs')) {
+  const tabContents = document.querySelectorAll('[data-index-tab-content]');
+  const tabControls = document.querySelectorAll('[data-index-tab-target]');
+
+  tabControls.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const target = document.querySelector(tab.dataset.indexTabTarget);
+
+      tabContents.forEach((tabContent) => {
+        tabContent.classList.remove('shown');
+      });
+
+      target.classList.add('shown');
+
+      tabControls.forEach((tab) => {
+        tab.classList.remove('hidden');
+      });
+
+      tab.classList.add('hidden');
+    });
+  });
+}

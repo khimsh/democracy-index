@@ -74,6 +74,14 @@
     box-shadow: var(--box-shadow);
     border-radius: 10px;
 
+    transition: background-color 150ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: hsl(var(--clr-black));
+    }
+
     @media only screen and (max-width: 680px) {
       padding-block: 10px;
     }

@@ -4,4 +4,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(397px, 1fr));
   gap: 30px;
+
+  @media only screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
 }

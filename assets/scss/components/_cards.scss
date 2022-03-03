@@ -3,11 +3,19 @@
   border-radius: 10px;
   border: 1px solid #d4d4d4;
 
+  @media only screen and (max-width: 520px) {
+    padding: 20px;
+  }
+
   & > div {
     display: flex;
     align-items: center;
     gap: 40px;
     margin-bottom: 30px;
+
+    @media only screen and (max-width: 520px) {
+      gap: 15px;
+    }
   }
 
   h2 {
@@ -16,6 +24,10 @@
     font-weight: 400;
     color: hsl(var(--clr-black));
     text-transform: uppercase;
+
+    @media only screen and (max-width: 520px) {
+      font-size: 1.25rem;
+    }
   }
 
   p {
@@ -92,6 +104,14 @@
     text-decoration: none;
     background-color: hsl(var(--clr-theme));
     border-radius: 10px;
+
+    transition: background-color 150ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: hsl(var(--clr-black));
+    }
 
     @media only screen and (max-width: 992px) {
       margin-top: 20px;
@@ -179,5 +199,13 @@
     text-decoration: none;
     background-color: hsl(var(--clr-theme));
     border-radius: 15px;
+
+    transition: background-color 150ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: hsl(var(--clr-black));
+    }
   }
 }
