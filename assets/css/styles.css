@@ -674,6 +674,10 @@ html:focus-within {
   font-size: 14px;
   color: #707070;
   text-decoration: none;
+  transition: color 150ms ease-in-out;
+}
+.footer a:hover, .footer a:active {
+  color: hsl(var(--clr-theme));
 }
 .footer p {
   font-family: var(--ff-regular);
@@ -685,6 +689,10 @@ html:focus-within {
 }
 .footer address a {
   color: hsl(var(--clr-theme));
+  transition: color 150ms ease-in-out;
+}
+.footer address a:hover, .footer address a:active {
+  color: hsl(var(--clr-black));
 }
 
 .social-media {

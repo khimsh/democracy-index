@@ -34,6 +34,12 @@
     font-size: 14px;
     color: #707070;
     text-decoration: none;
+    transition: color 150ms ease-in-out;
+
+    &:hover,
+    &:active {
+      color: hsl(var(--clr-theme));
+    }
   }
 
   p {
@@ -47,6 +53,12 @@
 
     a {
       color: hsl(var(--clr-theme));
+      transition: color 150ms ease-in-out;
+
+      &:hover,
+      &:active {
+        color: hsl(var(--clr-black));
+      }
     }
   }
 }
