@@ -339,6 +339,10 @@ html:focus-within {
   height: 100%;
 }
 
+* {
+  outline-color: hsl(var(--clr-theme));
+}
+
 .container {
   max-width: 1380px;
   width: 100%;
@@ -543,10 +547,6 @@ html:focus-within {
   position: relative;
   height: 100%;
 }
-.header__search:hover .header__search__box, .header__search:focus .header__search__box {
-  opacity: 1;
-  transform: scaleY(1);
-}
 .header__search__box {
   position: absolute;
   right: 0;
@@ -590,7 +590,7 @@ html:focus-within {
   position: relative;
   height: 100%;
 }
-.header__lang:hover .header__lang__options, .header__lang:focus .header__lang__options {
+.header__lang:hover .header__lang__options {
   transform: scaleY(1);
   opacity: 1;
 }
@@ -970,12 +970,12 @@ html:focus-within {
 .nav a {
   transition: all 150ms ease-in-out;
 }
-.nav a:hover, .nav a:active {
+.nav a:hover, .nav a:active, .nav a:focus {
   background-color: hsl(var(--clr-theme));
   color: hsl(var(--clr-white));
 }
 @media only screen and (min-width: 1200px) {
-  .nav a:hover, .nav a:active {
+  .nav a:hover, .nav a:active, .nav a:focus {
     background-color: transparent;
     color: hsl(var(--clr-theme));
   }
@@ -990,7 +990,7 @@ html:focus-within {
   border: none;
   transition: all 150ms ease-in-out;
 }
-.nav button:hover, .nav button:active {
+.nav button:hover, .nav button:active, .nav button:focus {
   background-color: hsl(var(--clr-theme));
   color: hsl(var(--clr-white));
 }
@@ -1022,7 +1022,7 @@ html:focus-within {
     cursor: pointer;
     padding-inline: 0;
   }
-  .dropdown span:hover, .dropdown span:active {
+  .dropdown span:hover, .dropdown span:active, .dropdown span:focus {
     color: hsl(var(--clr-theme));
   }
   .dropdown__content {
@@ -1041,7 +1041,8 @@ html:focus-within {
     transform-origin: top;
     transition: all 150ms ease-in-out;
   }
-  .dropdown__content a:hover, .dropdown__content a:active {
+  .dropdown__content a:hover, .dropdown__content a:active, .dropdown__content a:focus {
+    outline: none;
     background-color: hsl(var(--clr-theme));
     color: hsl(var(--clr-white));
   }

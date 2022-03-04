@@ -94,3 +94,21 @@ if (document.querySelector('.index-tabs')) {
     });
   });
 }
+
+// Show search
+const openSearchBtn = document.querySelector('.header__search button');
+const searchBox = document.querySelector('.header__search__box');
+
+openSearchBtn.addEventListener('click', () => {
+  searchBox.classList.toggle('active');
+  console.log('ran');
+});
+
+// Open language menu
+const langBtn = document.querySelector('.header__lang button');
+const langOptions = document.querySelector('.header__lang');
+
+langBtn.addEventListener('click', () => {
+  langOptions.classList.toggle('active');
+  console.log('ran');
+});

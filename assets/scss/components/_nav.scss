@@ -73,7 +73,8 @@
     transition: all 150ms ease-in-out;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: hsl(var(--clr-theme));
       color: hsl(var(--clr-white));
 
@@ -95,7 +96,8 @@
     transition: all 150ms ease-in-out;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: hsl(var(--clr-theme));
       color: hsl(var(--clr-white));
     }
@@ -138,7 +140,8 @@
       padding-inline: 0;
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         color: hsl(var(--clr-theme));
       }
     }
@@ -161,7 +164,9 @@
 
       a {
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
+          outline: none;
           background-color: hsl(var(--clr-theme));
           color: hsl(var(--clr-white));
         }
