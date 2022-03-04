@@ -112,3 +112,16 @@ langBtn.addEventListener('click', () => {
   langOptions.classList.toggle('active');
   console.log('ran');
 });
+
+// Video Gallery
+if (document.querySelector('[data-video-src]')) {
+  const videoSources = document.querySelectorAll('[data-video-src]');
+  const videoGallery = document.querySelector('[data-video-gallery]');
+  const videoTag = videoGallery.querySelector('[data-video]');
+
+  videoSources.forEach((videoSource) => {
+    videoSource.addEventListener('click', () => {
+      videoTag.src = `${videoSource.dataset.videoSrc}`;
+    });
+  });
+}

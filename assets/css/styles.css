@@ -910,6 +910,60 @@ html:focus-within {
   font-size: 12px;
 }
 
+.video-gallery {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  column-gap: 30px;
+}
+@media only screen and (max-width: 1200px) {
+  .video-gallery {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+.video-gallery__player iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.video-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.video-list__item {
+  padding-block: 20px;
+  border-bottom: 1px solid #d1d1d1;
+}
+.video-list__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: transparent;
+  border: none;
+}
+.video-list__btn:hover span {
+  color: hsl(var(--clr-theme));
+}
+.video-list__btn span {
+  font-family: var(--ff-caps);
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(var(--clr-black));
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  transition: color 150ms ease-in-out;
+}
+.video-list__btn i {
+  color: hsl(var(--clr-theme));
+}
+
 .nav {
   position: fixed;
   top: 0;
