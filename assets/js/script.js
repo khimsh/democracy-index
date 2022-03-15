@@ -129,8 +129,28 @@ if (document.querySelector('[data-video-src]')) {
 // Nav dropdown
 const dropdowns = document.querySelectorAll('.dropdown');
 
+window.addEventListener('click', (e) => {
+  const dropdownClicked = e.target.parentNode;
+
+  if (dropdownClicked.classList.contains('dropdown')) return;
+
+  dropdowns.forEach((dropdown) => closeDropdown(dropdown));
+});
+
 dropdowns.forEach((dropdown) => {
-  dropdown.addEventListener('click', () => {
-    dropdown.classList.toggle('active');
+  dropdown.addEventListener('click', function () {
+    if (this.classList.contains('active')) {
+      closeDropdown(dropdown);
+    } else {
+      dropdowns.forEach((dropdown) => closeDropdown(dropdown));
+      openDropdown(dropdown);
+    }
   });
 });
+
+function openDropdown(dropdown) {
+  dropdown.classList.add('active');
+}
+function closeDropdown(dropdown) {
+  dropdown.classList.remove('active');
+}
