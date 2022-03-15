@@ -1076,9 +1076,12 @@ html:focus-within {
     position: relative;
     z-index: 10;
   }
-  .dropdown:hover .dropdown__content, .dropdown:focus .dropdown__content, .dropdown:focus-within .dropdown__content, .dropdown:focus-visible .dropdown__content {
+  .dropdown:hover .dropdown__content, .dropdown:focus .dropdown__content, .dropdown:focus-within .dropdown__content, .dropdown.active .dropdown__content {
     opacity: 1;
     transform: scaleY(1);
+  }
+  .dropdown:hover span, .dropdown:focus span, .dropdown:focus-within span, .dropdown.active span {
+    color: hsl(var(--clr-theme));
   }
   .dropdown span {
     cursor: pointer;

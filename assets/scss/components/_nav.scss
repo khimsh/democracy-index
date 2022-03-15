@@ -128,10 +128,14 @@
     &:hover,
     &:focus,
     &:focus-within,
-    &:focus-visible {
+    &.active {
       .dropdown__content {
         opacity: 1;
         transform: scaleY(1);
+      }
+
+      span {
+        color: hsl(var(--clr-theme));
       }
     }
 
