@@ -528,9 +528,11 @@ html:focus-within {
   transform: translateX(1em);
 }
 .header button {
+  margin: 0;
   height: 100%;
   display: grid;
   place-content: center;
+  color: #000000;
   background-color: transparent;
   border: none;
   transition: all 150ms ease-in-out;
@@ -1076,11 +1078,11 @@ html:focus-within {
     position: relative;
     z-index: 10;
   }
-  .dropdown:focus-within .dropdown__content, .dropdown.active .dropdown__content {
+  .dropdown:hover .dropdown__content, .dropdown:focus-within .dropdown__content, .dropdown.active .dropdown__content {
     opacity: 1;
     transform: scaleY(1);
   }
-  .dropdown:focus-within span, .dropdown.active span {
+  .dropdown:hover span, .dropdown:focus-within span, .dropdown.active span {
     color: hsl(var(--clr-theme));
   }
   .dropdown span {

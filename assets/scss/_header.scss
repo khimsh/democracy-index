@@ -34,9 +34,11 @@
   }
 
   button {
+    margin: 0;
     height: 100%;
     display: grid;
     place-content: center;
+    color: #000000;
     background-color: transparent;
     border: none;
     transition: all 150ms ease-in-out;
