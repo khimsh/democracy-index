@@ -19,21 +19,19 @@ if (document.querySelector('[data-accordion]')) {
   accordions.forEach((dropdown) => {
     const trigger = dropdown.querySelector('[data-trigger]');
 
-    trigger.addEventListener('click', toggleAccordion);
-  });
+    trigger.addEventListener('click', function () {
+      const clickedItem = this.closest('[data-accordion]');
 
-  function toggleAccordion() {
-    const clickedItem = this.parentNode.parentNode.parentNode;
+      accordions.forEach((item) => {
+        if (clickedItem === item) {
+          clickedItem.classList.toggle('active');
+          return;
+        }
 
-    accordions.forEach((item) => {
-      if (clickedItem === item) {
-        clickedItem.classList.toggle('active');
-        return;
-      }
-
-      item.classList.remove('active');
+        item.classList.remove('active');
+      });
     });
-  }
+  });
 }
 
 // Navigation
